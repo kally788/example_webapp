@@ -1,0 +1,196 @@
+@charset "utf-8";
+/*禁止长按保存图片,禁用长按图片保存*/
+.imgDisable {pointer-events: none;}
+
+.selectDisable{
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    user-select:none;
+}
+.shadow{
+    box-shadow:-15px 0px 15px #c2c2c2;
+}
+
+/*设置布局样式*/
+.layout{}
+.layout #top{background-color: #000;height: 50px;width:100%;position: fixed; top: 0px;z-index: 100;}
+.layout #body{overflow:hidden; position: relative;}
+
+.layout #body #main{width:100%; margin-left: 0px;}
+.layout #body #main #list{width:100%;padding-top: 50px;margin-bottom: 60px;}
+.layout #body #main #menu{background-color: #fff;width:100%;position: fixed; bottom: 0px;height:60px; border-top: 1px solid #ededed;}
+
+.layout #body #child{width:100%;margin-top: 50px;margin-bottom: 0px;position: absolute;top: 0px;}
+
+/*顶部栏*/
+.top{color: #fff;}
+.top div{
+    line-height: 50px;
+    float:left;
+    width: 20%;
+    text-align: center;
+    font:18px/50px "Arial";
+    font-weight:bold;
+    overflow:hidden;white-space:nowrap;
+}
+.top .middle{
+    width: 60%;
+}
+
+/*菜单栏*/
+.bottom{color: #6a6a6a;}
+.bottom div{
+    line-height: 60px;
+    float:left;
+    width: 50%;
+    text-align: center;
+    font:18px/60px "Arial";
+    overflow:hidden;white-space:nowrap;
+}
+.bottom .btn1{border-right: 1px solid #ededed;margin-left: -1px;}
+.btnFocus{
+    color: #252525;
+    background-color: #f4f4f4;
+}
+
+/*列表*/
+.list{border-top: 1px solid #f0f0f0;}
+.list .item{height: 81px;}
+.list .item div{
+    background-color: #fff;
+    height: 80px;
+    line-height: 80px;
+    float:left;
+    width: 20%;
+    text-align: center;
+    font:14px/80px "Arial";
+    border-bottom: 1px solid #f0f0f0;
+}
+.list .item img{height:60px;margin:8px 8px 8px 8px;border: 2px solid #ebebeb;}
+.list .item .img{padding-right: 5%;padding-left: 5%;}
+.list .item .text{width: 50%;text-align: left;overflow:hidden;white-space:nowrap;}
+.list .item .btn{
+    color: #d0d0d0;
+    font-weight:bold;
+}
+/*.list .item:hover > .text{
+    background-color: #efefef;
+}
+.list .item:hover > .img{
+    background-color: #efefef;
+}
+.list .item:hover > .btn{
+    background-color: #efefef;
+}*/
+/*内容*/
+.content{
+    background-color: #fcfcfc;
+
+}
+.content img{width: 100%}
+.content .title{
+    margin-top: -6px;
+    height: 62px;
+    border-left:1px solid #f0f0f0;
+}
+.content .title div{
+    background-color: #fff;
+    height: 60px;
+    line-height: 60px;
+    float:left;
+    width: 20%;
+    text-align: center;
+    font:18px/60px "Arial";
+    border-bottom: 1px solid #f0f0f0;
+    border-top: 1px solid #f0f0f0;
+}
+.content .title .left{
+    width: 60%;
+    font-weight:bold;
+    font:24px/60px "Arial";
+    overflow:hidden;white-space:nowrap;
+}
+.content .title .middle{
+    border-left: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+    margin-left: -2px;
+    font:14px/60px "Arial";
+    color: #ada9aa;
+    overflow:hidden;white-space:nowrap;
+}
+.content .title .right{
+    color: #ff8296;
+    font-weight:bold;
+}
+.content .desc{
+    font-family:"Arial";
+    padding: 15px 15px 0px 15px;
+    color: #575555;
+    border-left:1px solid #f0f0f0;
+}
+.content a{
+    text-decoration:none;
+}
+.content .tel{
+    margin: 30px 30px 0px 30px;
+    border: 2px solid #28b53f;
+    background-color: #37d028;
+    color: #fff;
+    font:18px/60px "Arial";
+    text-align: center;
+    line-height: 60px;
+    font-weight:bold;
+    -moz-border-radius: 15px;      /* Gecko browsers */
+    -webkit-border-radius: 15px;   /* Webkit browsers */
+    border-radius:15px;            /* W3C syntax */
+}
+
+/*弹框*/
+.pop{
+    width:100%;
+    position: fixed;
+    bottom: 0px;
+    z-index: 200;
+}
+.pop .bg{
+    background-color: #000;
+    filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+    opacity:0.5;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    top:0px;
+    z-index: -1;
+}
+.pop .desc{
+    background-color: #fff;
+    margin: 20px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
+    color: #686868;
+    font:14px/14px "Arial";
+    line-height: 14px;
+    text-align: left;
+    -moz-border-radius: 15px;      /* Gecko browsers */
+    -webkit-border-radius: 15px;   /* Webkit browsers */
+    border-radius:15px;            /* W3C syntax */
+    overflow:hidden;
+}
+.pop .btn{
+    background-color: #f1f1f1;
+    margin: 20px 20px 20px 20px;
+    color: #095ced;
+    font:20px/60px "Arial";
+    text-align: center;
+    line-height: 60px;
+    font-weight:bold;
+    -moz-border-radius: 15px;      /* Gecko browsers */
+    -webkit-border-radius: 15px;   /* Webkit browsers */
+    border-radius:15px;            /* W3C syntax */
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+.pop .btn:hover{
+    background-color: #efefef;
+}
