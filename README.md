@@ -12,4 +12,6 @@ JsMvc框架：https://github.com/kally788/jsmvc
 
 DEMO在线演示：http://120.24.13.18/example/webapp
 
-手机扫描访问：<img src="http://120.24.13.18/example/webapp.png"/>
+手机扫描访问：
+
+<img src="http://120.24.13.18/example/webapp.png"/>
