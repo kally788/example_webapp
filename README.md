@@ -10,7 +10,7 @@ JsMvc框架：https://github.com/kally788/jsmvc
 打包工具：https://github.com/kally788/JsmvcPackProject
 
 
-DEMO在线演示：http://120.24.13.18/example/webapp
+DEMO在线演示：http://jsmvc.cn/example/webapp
 
 手机扫描访问：
 
